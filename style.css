@@ -1,3 +1,5 @@
+/* Basic styling for whole page */
+
 html {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +16,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Styling for the container that includes all the content*/
 .card{
     width: 40vw;
     background: rgb(21,21,54);
@@ -25,6 +28,7 @@ html {
     text-align: center;
 }
 
+/* Styling for the search section */
 .card__search{
     width: 100%;
     display: flex;
@@ -32,6 +36,7 @@ html {
     justify-content: space-evenly;
 }
 
+/* Styling for the search bar */
 .card__search input{
     border: 0;
     background: #ebfffc;
@@ -44,6 +49,7 @@ html {
     font-size: 1.3rem;
 } 
 
+/* Styling for search button */
 .card__button{
     border: 0;
     background: #ebfffc;
@@ -53,14 +59,54 @@ html {
     cursor: pointer;
 }
 
+/* Styling for the main weather Icon */
 .weather__icon{
-    width: 80%;
+    width: 30%;
+    margin-top: 1rem;
 }
 
-.weather_text--mod{
-    font-size: 1.2rem;
+/* Styling for the h1 and h2 text on the center of container */
+.weather__text--mod{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+
 }
 
+/* Styling for the extra details container, humidity and wind */
+.weather__details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.details__wind{
+    margin-top: -0.3rem;
+}
+
+/* Styling for the extra details, humidity and wind */
+.details__info--mod{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.details__info--mod p{
+    margin: 0.5rem;
+}
+
+/* Styling for the extra details img, humidity and wind */
+.details__info--mod img{
+    width: 35%;
+    margin-right: 0.5rem;
+}
+
+/* Styling for the extra details text, humidity and wind */
+.humidity__amount, .wind__amount{
+    font-size: 1.3rem;
+}
+
+/* Responsive desing style */
 @media screen and (max-width:767px) {
 
     html{
@@ -88,6 +134,24 @@ html {
         font-size: 1rem;
     }
 
+    .details__wind{
+        margin-top: -0.6rem;
+    }
+
+    .details__info--mod{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details__info--mod img{
+        width: 50%;
+        margin-right: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .details__info--mod p{
+        margin: 0.2rem;
+    }
 }
 
 

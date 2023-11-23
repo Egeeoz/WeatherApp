@@ -8,15 +8,42 @@
     <title>Weather</title>
 </head>
 <body>
+    <!-- Main Container -->
     <section class="card">
+
+        <!-- Search bar container  -->
         <section class="card__search">
             <input type="text" name="" id="card__input" placeholder="Enter Location" spellcheck="false">
             <button class="card__button">Search</button>
         </section>
+
+        <!-- Main content -->
         <aside class="card__weather">
-            <img src="img/sunny.png" alt="Sunny Icon" class="weather__icon">
-            <h1 class="weather__temp weather_text--mod">14°C</h1>
-            <h2 class="weather__city weather_text--mod">Stockholm</h2>
+
+            <!-- Main weather icon, main text -->
+            <img src="img/rain.png" alt="Weather Icon" class="weather__icon">
+            <h1 class="weather__temp weather__text--mod">14°C</h1>
+            <h2 class="weather__city weather__text--mod">Stockholm</h2>
+            
+            <!-- Extra details container -->
+            <section class="weather__details">
+                <!-- Extra detail humidity content-->
+                <section class="details__humidity details__info--mod">
+                    <img src="img/humidity.png" alt="Humidity Icon">
+                    <section class="humidity__info">
+                        <p class="humidity__amount">74%</p>
+                        <p>Humidity</p>
+                    </section>
+                </section>
+                <!-- Extra detail wind content-->
+                <section class="details__wind details__info--mod">
+                    <img src="img/wind.png" alt="Wind Icon">
+                    <section class="wind__info">
+                        <p class="wind__amount">4 m/s</p>
+                        <p>Wind Speed</p>
+                    </section>
+                </section>
+            </section>
         </aside>
     </section>
 </body>
